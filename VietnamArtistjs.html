@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Artist Gallery</title>
+    <link rel="stylesheet" href="stylejs.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Photo Gallery</h1>
+        <p id="message">Hover over an image below to display here.</p>
+    </header>
+
+    <main>
+        <div id="image-display">
+            Mô tả ảnh sẽ hiện ở đây.
+        </div>
+
+        <div class="preview-container">
+            <img class="preview" src="stmtp.jpg" alt="Sơn Tùng M-TP Stage" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            <img class="preview" src="right.jpg" alt="24k.Right Performance" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            <img class="preview" src="tlinh.jpg" alt="Tlinh Studio" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            <img class="preview" src="vpop1.jpg" alt="V-Pop Concert" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            <img class="preview" src="vpop2.jpg" alt="Music" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            <img class="preview" src="vpop3.jpg" alt="Artist" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
